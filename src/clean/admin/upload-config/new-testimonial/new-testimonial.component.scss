@@ -1,0 +1,45 @@
+.wrapper {
+    height: calc(86vh - 60px);
+    .container {
+        height: 100%;
+        .content {
+            height: 100%;
+            .member {
+                height: 100%;
+                .title {
+                    height: 5em;
+                    display: grid;
+                    place-content: center;
+                    color: #bdc3c7;
+                }
+                .forms {
+                    height: 100%;
+                    .errors {
+                        text-align: center;
+                        border: 1px solid #dc3545;
+                        border-radius: 5px;
+                    }
+                    section {
+                        height: 100%;
+                        display: grid;
+                        .two {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: 1em;
+                            .image {
+                                height: 50vh;
+                            }
+                        }
+                        .button {
+                            text-align: end;
+                            .btn {
+                                background-color: #1abc9c;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+const colors = require('colors')
+const mongoose = require('mongoose')
+mongoose.connect("mongodb://0.0.0.0:27017", { useNewUrlParser: true, useUnifiedTopology: true, family: 4 })
+    .then((res) => console.log('> Connected...'.bgMagenta.white))
+    .catch(err => console.log(`> Error while connecting to mongoDB : ${err.message}`.underline.red))

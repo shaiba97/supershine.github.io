@@ -1,0 +1,109 @@
+.book {
+    width: 100%;
+    height: 100vh;
+    .info {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: grid;
+        place-content: center;
+        place-items: center;
+        form {
+            padding: 5em;
+            display: grid;
+            place-content: center;
+            row-gap: 5px;
+            .errors {
+                text-align: center;
+                border: 1px solid #dc3545;
+                border-radius: 5px;
+            }
+            .two {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: .5em;
+            }
+            .btn {
+                background-color: #9b59b6;
+                color: #fff;
+            }
+            .customer {
+                display: flex;
+                place-items: center;
+                column-gap: 1em;
+                .toggle {
+                    position: relative;
+                    display: inline-block;
+                    width: 50px;
+                    height: 24px;
+                }
+                .toggle input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #ccc;
+                    transition: .4s;
+                    border-radius: 50px;
+                }
+                .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 17px;
+                    width: 17px;
+                    border-radius: 50px;
+                    left: 4px;
+                    bottom: 4px;
+                    background-color: white;
+                    transition: .4s;
+                }
+                input:checked+.slider {
+                    background-color: #3498db;
+                }
+                input:checked+.slider:before {
+                    transform: translateX(26px);
+                }
+                /* Rounded sliders */
+                .slider.round {
+                    border-radius: 34px;
+                }
+                .slider.round:before {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 811px) {
+    .book {
+        width: 100%;
+        height: 55vh;
+        .info {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            form {
+                padding: 1em;
+                display: grid;
+                .btn {
+                    background-color: #9b59b6;
+                    color: #fff;
+                }
+                .form-text {
+                    display: none;
+                }
+                .customer {
+                    font-size: .9em;
+                }
+            }
+        }
+    }
+}

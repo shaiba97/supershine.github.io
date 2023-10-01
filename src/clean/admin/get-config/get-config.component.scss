@@ -1,0 +1,31 @@
+.wrapper {
+    .container {
+        .content {
+            display: flex;
+            .uploads {
+                width: 80%;
+            }
+            .config {
+                width: 20%;
+                ul {
+                    li {
+                        list-style: none;
+                        a {
+                            text-decoration: none;
+                            color: #b0b0b0;
+                            text-transform: capitalize;
+                        }
+                        a:hover {
+                            color: #000;
+                            font-weight: 600;
+                        }
+                        .detect {
+                            color: #000;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

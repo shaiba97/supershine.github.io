@@ -1,0 +1,51 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="content">
+            <div class="member">
+                <div class="title">
+                    <h3>New Testimonial</h3>
+                </div>
+                <div class="forms">
+                    <div class="errors" id="errors" *ngIf="errors !== undefined">
+                        <span class="error" *ngFor="let error of errors">
+                        <small *ngIf="error.type === 'required'" class="text-danger" >{{ error.msg }}</small>
+                        <small *ngIf="error.type === 'regex'" class="text-danger">{{ error.msg }}</small>
+                      </span>
+                    </div>
+                    <section>
+                        <div class="two">
+                            <div class="mb-3">
+                                <div class="image">
+                                    <img [src]="beforeUrl" class="rounded mx-auto d-block img-fluid img-fluid img-thumbnail rounded" alt="">
+                                </div>
+                                <div class="input">
+                                    <label for="before" class="form-label">Before</label>
+                                    <input class="form-control" (click)="delete($event)" (change)="beforeImage($event)" accept="images/*" type="file" id="before">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="image">
+                                    <img [src]="afterUrl" class="rounded mx-auto d-block img-fluid img-fluid img-thumbnail rounded" alt="">
+                                </div>
+                                <div class="input">
+                                    <label for="after" class="form-label">After</label>
+                                    <input class="form-control" (click)="delete($event)" (change)="afterImage($event)" accept="images/*" type="file" id="after">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit" class="btn" (click)="postRequest()"> Add Testimonial </button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+        Testimonial Uploaded Successfully!
+    </div>
+</div>

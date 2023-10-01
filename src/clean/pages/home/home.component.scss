@@ -1,0 +1,430 @@
+.wrapper {
+    width: 100vw;
+    height: fit-content;
+    .containers {
+        height: 100%;
+        .contents {
+            height: 100%;
+            .hero-section {
+                height: 100%;
+                .hero {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: -1;
+                    display: grid;
+                    place-content: center;
+                    .hero-text {
+                        width: 100vw;
+                        background-color: #e0d8c8;
+                        text-align: center;
+                        padding: 1em 0;
+                        a {
+                            background-color: #9b59b6;
+                            color: #fff;
+                        }
+                    }
+                }
+                .carousel {
+                    height: 100%;
+                    z-index: -2;
+                    img {
+                        height: 100vh;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+            .divider {
+                height: 50vh;
+            }
+            .why-us {
+                width: 100%;
+                height: 100vh;
+                display: grid;
+                .title {
+                    width: 100%;
+                    background-color: #9b59b6;
+                    display: grid;
+                    place-content: center;
+                    place-items: center;
+                    h1 {
+                        color: #fff;
+                        font-size: 5em;
+                        text-transform: uppercase;
+                    }
+                }
+                .content {
+                    display: grid;
+                    place-items: center;
+                    grid-template-columns: repeat(4, 1fr);
+                    .box {
+                        display: grid;
+                        place-content: center;
+                        place-items: center;
+                        gap: 2em;
+                        padding: 1em;
+                        border: none;
+                        svg {
+                            width: 5em;
+                            color: #3498db;
+                        }
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            .testimonial {
+                width: 100%;
+                height: fit-content;
+                display: grid;
+                display: grid;
+                row-gap: 5em;
+                .title {
+                    width: 100%;
+                    color: #cccccc;
+                    display: grid;
+                    place-content: center;
+                    place-items: center;
+                    h1 {
+                        text-transform: uppercase;
+                    }
+                }
+                .container {
+                    height: 100%;
+                    height: fit-content;
+                    display: grid;
+                    row-gap: 1em;
+                    .see-more {
+                        text-align: end;
+                    }
+                }
+                .images {
+                    width: 100%;
+                    height: fit-content;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    row-gap: 3em;
+                    .card {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 1em;
+                        margin: 1em;
+                        padding: 1em;
+                        img {
+                            height: 50vh;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                }
+            }
+            .blog {
+                height: 100vh;
+                .title {
+                    text-transform: uppercase;
+                }
+                .content {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 1em;
+                    .figures {
+                        figure {
+                            padding: .5em;
+                            height: 50vh;
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            column-gap: 1em;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center;
+                                -o-object-fit: cover;
+                                -o-object-position: center;
+                            }
+                            figcaption {
+                                p {
+                                    text-align: justify;
+                                    color: #555;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .contact {
+                width: 100%;
+                height: 50vh;
+                display: grid;
+                .title {
+                    height: 30%;
+                    h3 {
+                        text-transform: uppercase;
+                    }
+                }
+                .content {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    place-items: center;
+                    .box {
+                        border: none;
+                        svg {
+                            width: 5em;
+                        }
+                    }
+                    .facebook {
+                        color: #1877F2;
+                    }
+                    .instagram {
+                        color: #E4405F;
+                    }
+                    .snapchat {
+                        color: #020202;
+                    }
+                }
+            }
+            .book {
+                width: 100%;
+                height: 100vh;
+                background-color: #e0d8c8;
+                .info {
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    display: grid;
+                    place-content: center;
+                    place-items: center;
+                    form {
+                        padding: 5em;
+                        display: grid;
+                        place-content: center;
+                        row-gap: 5px;
+                        .errors {
+                            text-align: center;
+                            border: 1px solid #dc3545;
+                            border-radius: 5px;
+                        }
+                        .two {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            column-gap: .5em;
+                        }
+                        .btn {
+                            background-color: #9b59b6;
+                            color: #fff;
+                        }
+                        .customer {
+                            display: flex;
+                            place-items: center;
+                            column-gap: 1em;
+                            .toggle {
+                                position: relative;
+                                display: inline-block;
+                                width: 50px;
+                                height: 24px;
+                            }
+                            .toggle input {
+                                opacity: 0;
+                                width: 0;
+                                height: 0;
+                            }
+                            .slider {
+                                position: absolute;
+                                cursor: pointer;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                background-color: #ccc;
+                                transition: .4s;
+                                border-radius: 50px;
+                            }
+                            .slider:before {
+                                position: absolute;
+                                content: "";
+                                height: 17px;
+                                width: 17px;
+                                border-radius: 50px;
+                                left: 4px;
+                                bottom: 4px;
+                                background-color: white;
+                                transition: .4s;
+                            }
+                            input:checked+.slider {
+                                background-color: #3498db;
+                            }
+                            input:checked+.slider:before {
+                                transform: translateX(26px);
+                            }
+                            /* Rounded sliders */
+                            .slider.round {
+                                border-radius: 34px;
+                            }
+                            .slider.round:before {
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 811px) {
+    .wrapper {
+        .containers {
+            .contents {
+                .hero-section {
+                    position: relative;
+                    .hero {
+                        position: absolute;
+                        .hero-text {
+                            h1 {
+                                font-size: 1.2em;
+                                font-weight: 600;
+                            }
+                            p {
+                                display: none;
+                            }
+                        }
+                    }
+                    .carousel {
+                        img {
+                            height: 50vh;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                }
+                .divider {
+                    height: 20vh;
+                }
+                .price {
+                    display: flex;
+                    place-content: center;
+                    img {
+                        width: 50%;
+                    }
+                }
+                .why-us {
+                    width: 100%;
+                    height: 50vh;
+                    display: grid;
+                    gap: 2em;
+                    .title {
+                        width: 100%;
+                        height: 15vh;
+                        background-color: #9b59b6;
+                        display: grid;
+                        place-content: center;
+                        place-items: center;
+                        h1 {
+                            color: #fff;
+                            font-size: 2em;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .content {
+                        display: grid;
+                        place-items: center;
+                        grid-template-columns: repeat(2, 1fr);
+                        .box {
+                            display: grid;
+                            place-content: center;
+                            place-items: center;
+                            gap: 3em;
+                            padding: .5em;
+                            border: none;
+                            svg {
+                                width: 3em;
+                                color: #3498db;
+                            }
+                            span {
+                                font-size: .6em;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+                .testimonial {
+                    .container {
+                        .images {
+                            height: fit-content;
+                            display: block;
+                            .card {
+                                display: grid;
+                                grid: 1 1;
+                                img {
+                                    height: 30vh;
+                                    object-fit: cover;
+                                    object-position: center;
+                                }
+                            }
+                        }
+                    }
+                }
+                .blog {
+                    height: fit-content;
+                    .content {
+                        .figures {
+                            figure {
+                                height: fit-content;
+                                display: block;
+                                img {
+                                    height: 10vh;
+                                    object-fit: cover;
+                                    object-position: center;
+                                }
+                                figcaption {
+                                    h3 {
+                                        font-size: 90%;
+                                        font-weight: 600;
+                                    }
+                                    font-size: 1.3ch;
+                                }
+                            }
+                        }
+                    }
+                }
+                .contact {
+                    width: 100%;
+                    height: 50vh;
+                    border: 1px solid #cccccc;
+                    display: grid;
+                    .content {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        place-items: center;
+                    }
+                }
+                .book {
+                    width: 100%;
+                    height: 50vh;
+                    background-color: #f4f4f4;
+                    .info {
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        form {
+                            padding: 1em;
+                            display: grid;
+                            .btn {
+                                background-color: #9b59b6;
+                                color: #fff;
+                            }
+                            .form-text {
+                                display: none;
+                            }
+                            .customer {
+                                font-size: .9em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

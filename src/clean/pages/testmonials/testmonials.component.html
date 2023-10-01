@@ -1,0 +1,34 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="content">
+            <div class="testimonial">
+                <div class="divider title">
+                    <h1> Our Works </h1>
+                </div>
+
+                <div class="container">
+                    <div class="images">
+                        <div class="card" *ngFor="let item of items">
+
+                            <div class="time">
+                                <img src="../../../assets/uploads/testimonials/{{item.images[0]}}" class="d-block w-100 img-thumbnail img-fluid" alt="...">
+                            </div>
+
+
+                            <div class="time">
+                                <img src="../../../assets/uploads/testimonials/{{item.images[1]}}" class="d-block w-100 img-thumbnail img-fluid" alt="...">
+                            </div>
+
+                            <div class="links">
+                                <a routerLink="../testimonials/testimonial/{{item._id}}" class="card-link">Zoom</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+</div>

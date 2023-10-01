@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="content">
+        <div class="card">
+            <div class="title">
+                <h3>Log in</h3>
+            </div>
+            <form method="post" [formGroup]="items">
+                <div class="errors" id="errors" *ngIf="errors !== undefined">
+                    <span class="error" *ngFor="let error of errors">
+                  <small *ngIf="error.type === 'required'" class="text-danger" >{{ error.msg }}</small>
+                  <small *ngIf="error.type === 'regex'" class="text-danger">{{ error.msg }}</small>
+                  <small *ngIf="error.type === 'invalid'" class="text-danger">{{ error.msg }}</small>
+                </span>
+                </div>
+                <div class="mb-3">
+                    <input type="text" maxlength="10" required class="form-control" (click)="delete($event)" formControlName="contact" id="contact" placeholder="Contact">
+                </div>
+                <div class="mb-3">
+                    <input type="password" maxlength="8" required class="form-control" (click)="delete($event)" formControlName="password" id="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn" (click)="login()">Log in</button>
+            </form>
+        </div>
+    </div>
+</div>

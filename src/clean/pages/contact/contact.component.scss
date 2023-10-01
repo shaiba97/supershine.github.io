@@ -1,0 +1,73 @@
+.wrapper {
+    width: 100%;
+    height: 70vh;
+    .container {
+        .content {
+            .contact {
+                display: grid;
+                place-content: center;
+                row-gap: 2em;
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 811px) {
+    .wrapper {
+        .container {
+            width: 100%;
+            height: 100%;
+            .content {
+                width: 100%;
+                height: 100%;
+                .contact {
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    place-content: center;
+                    row-gap: 6em;
+                    form {
+                        display: grid;
+                        place-content: center;
+                        row-gap: 5px;
+                        .errors {
+                            text-align: center;
+                            border: 1px solid #dc3545;
+                            border-radius: 5px;
+                        }
+                        .inputs {
+                            display: grid;
+                            place-content: center;
+                            place-content: center;
+                            .two {
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                column-gap: .5em;
+                            }
+                        }
+                    }
+                    .social-media {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        place-items: center;
+                        .box {
+                            border: none;
+                            svg {
+                                width: 2em;
+                            }
+                        }
+                        .facebook {
+                            color: #1877F2;
+                        }
+                        .instagram {
+                            color: #E4405F;
+                        }
+                        .snapchat {
+                            color: #020202;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="content">
+            <div class="divider title">
+                <h1> Blogs </h1>
+            </div>
+            <div class="blogs">
+                <div class="content">
+                    <div class="figures" *ngFor="let item of items">
+                        <figure class="card">
+                            <img loading="lazy" class="rounded img-thumbnail" src="../../../assets/uploads/blogs/{{item.image}}" alt="">
+                            <figcaption>
+                                <h3>{{item.title}}</h3>
+                                <p>{{item.blog | slice: 0:200 }} <a routerLink="../blogs/blog/{{item._id}}"> Read More >></a> </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+        </div>
+    </div>
+</div>

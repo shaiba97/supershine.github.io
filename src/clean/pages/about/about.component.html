@@ -1,0 +1,37 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="content">
+            <div class="about">
+                <div class="divider title">
+                    <h1>About Us</h1>
+                </div>
+                <div class="figures">
+                    <figure class="d-flex justify-content-center" *ngFor="let item of items">
+                        <div class="image">
+                            <img src="../../../assets/uploads/members/{{item.image}}" alt="" class="rounded img-fluid">
+                        </div>
+                        <figcaption>
+                            <div class="person">
+                                <h3>{{ item.first_name +' '+ item.last_name }}</h3>
+                                <span>{{ item.position }}</span>
+                            </div>
+                            <p> {{ item.comment }} </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="about-us card">
+                    <h3>About us</h3>
+                    <p>
+                        We are a God-centered family owned and operated business. Since our founding, we have grown tremendously to proudly serve Humble, Houston, Kingwood, and Spring. Great service begins and ends with experienced and friendly professionals, which is why we
+                        put so much consideration into selecting only the best to join our team. We complete jobs efficiently and on schedule, and go above and beyond to form lasting relationships with our clients. For ease of mind, Bluebonnet Cleaning
+                        is insured because we care about the safety and protection of our clients
+                    </p>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+</div>

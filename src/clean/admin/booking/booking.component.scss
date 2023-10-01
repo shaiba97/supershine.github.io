@@ -1,0 +1,60 @@
+.wrapper {
+    .container {
+        .content {
+            display: grid;
+            gap: .6em;
+            .title {
+                height: 8em;
+                display: grid;
+                place-content: center;
+                place-items: center;
+                color: #bdc3c7;
+            }
+            .back {
+                .btn {
+                    border: 1px solid #000;
+                    color: #000;
+                }
+            }
+            .card {
+                padding: 1em;
+                display: flex;
+                place-content: space-between;
+                ul {
+                    li {
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-between;
+                        .right {
+                            width: 20%;
+                            display: flex;
+                            place-items: center;
+                            gap: .5em;
+                            font-weight: 600;
+                            svg {
+                                width: 1.3em;
+                                font-weight: 600;
+                            }
+                        }
+                        .left {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 811px) {
+    .wrapper {
+        .container {
+            .content {
+                height: 6em;
+                table {
+                    overflow-y: scroll;
+                }
+            }
+        }
+    }
+}

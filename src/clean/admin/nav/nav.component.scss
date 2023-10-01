@@ -1,0 +1,20 @@
+.wrapper {
+    display: flex;
+    .router {
+        width: 100%;
+        router-outlet {
+            height: 200vh;
+        }
+    }
+    app-side-nav {
+        width: 260px;
+        position: sticky;
+        top: 0;
+    }
+    app-menu-nav,
+    app-side-nav {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+}

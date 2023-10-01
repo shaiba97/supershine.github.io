@@ -1,0 +1,23 @@
+.content {
+    display: grid;
+    .title {
+        height: 8em;
+        display: grid;
+        place-content: center;
+        h1 {
+            color: #2980b9;
+        }
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        text-align: center;
+        h1 {
+            color: #2980b9;
+        }
+        h3 {
+            color: #1abc9c;
+        }
+    }
+}

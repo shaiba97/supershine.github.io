@@ -1,0 +1,47 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="content">
+            <div class="member">
+                <div class="title">
+                    <h3>New Member</h3>
+                </div>
+                <div class="forms">
+                    <div class="errors" id="errors" *ngIf="errors !== undefined">
+                        <span class="error" *ngFor="let error of errors">
+                          <small *ngIf="error.type === 'required'" class="text-danger" >{{ error.msg }}</small>
+                          <small *ngIf="error.type === 'regex'" class="text-danger">{{ error.msg }}</small>
+                        </span>
+                    </div>
+                    <form action="" class="english" [formGroup]="items">
+                        <div class="image mb-3">
+                            <img src="{{imageUrl}}" alt="">
+                            <div class="mb-3">
+                                <input class="form-control" accept="images/*" (change)="onChangeImage($event)" (click)="delete($event)" id="image" type="file">
+                            </div>
+                        </div>
+                        <div class="two">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" (click)="delete($event)" formControlName="first_name" id="first_name" placeholder="First Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" (click)="delete($event)" formControlName="last_name" id="last_name" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="two">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" (click)="delete($event)" formControlName="contact" id="contact" placeholder="Email or Phone Number">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" (click)="delete($event)" formControlName="position" id="position" placeholder="Position">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" (click)="delete($event)" formControlName="comment" rows="3" id="comment" placeholder="What he/she thinks about the company..."></textarea>
+                        </div>
+                        <button type="submit" class="btn" (click)="postRequest()"> Add Member </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

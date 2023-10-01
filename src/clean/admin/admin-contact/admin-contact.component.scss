@@ -1,0 +1,38 @@
+.container {
+    height: calc(100vh - 60px);
+    .content {
+        height: 100%;
+        display: grid;
+        place-content: center;
+        .card {
+            padding: 1em;
+            display: grid;
+            gap: 1em;
+            .title {
+                height: 10vh;
+                display: flex;
+                place-content: center;
+            }
+            .btn {
+                background-color: #9b59b6;
+                color: #fff;
+            }
+            form {
+                display: grid;
+                gap: .5em;
+                .errors {
+                    text-align: center;
+                    border: 1px solid #dc3545;
+                    border-radius: 5px;
+                }
+                input {
+                    width: 27vw;
+                }
+                button: {
+                    background-color: #9b59b6;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

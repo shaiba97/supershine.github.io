@@ -1,0 +1,74 @@
+.wrapper {
+    .container {
+        .content {
+            .account {
+                .title {
+                    height: 5em;
+                    display: grid;
+                    place-content: center;
+                    place-items: center;
+                    color: #bdc3c7;
+                }
+                .infos {
+                    display: grid;
+                    row-gap: 1em;
+                    .card {
+                        .card-body {
+                            display: grid;
+                            row-gap: .5em;
+                            .errors {
+                                border: 1px solid red;
+                                border-radius: 5px;
+                                text-align: center;
+                                .error {
+                                    small {
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                        form {
+                            .two {
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                column-gap: 1em;
+                            }
+                            .button {
+                                .btn {
+                                    background-color: #9b59b6;
+                                    color: #fff;
+                                }
+                            }
+                            .buttons {
+                                display: flex;
+                                column-gap: 1em;
+                                .btn {
+                                    border: 1px solid #ccc;
+                                }
+                                .btn:hover {
+                                    color: #ccc;
+                                }
+                            }
+                        }
+                    }
+                }
+                .avatar {
+                    .image {
+                        display: grid;
+                        justify-content: center;
+                        place-items: center;
+                        row-gap: 1em;
+                        img {
+                            width: 100px;
+                            height: 100px;
+                            border: 1px solid #bdc3c7;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

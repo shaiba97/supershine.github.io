@@ -1,0 +1,183 @@
+.wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: #fff;
+    .justify-content-between {
+        .nav-pills {
+            a {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+    .contact {
+        padding: .5em 0;
+        background-color: #f4f4f4;
+        .container {
+            display: flex;
+            .phone-phones {
+                width: 100%;
+                display: none;
+            }
+            .normal-phones {
+                width: 100%;
+                display: flex;
+                place-content: space-between;
+                place-items: center;
+                gap: 1em;
+                .phones {
+                    display: flex;
+                    place-items: center;
+                    gap: 1em;
+                    .icons {
+                        display: flex;
+                        place-items: center;
+                        gap: .5em;
+                        text-transform: uppercase;
+                        svg {
+                            color: #25D366;
+                        }
+                    }
+                    .numbers {
+                        display: flex;
+                        place-items: center;
+                        gap: .5em;
+                    }
+                }
+                .social-media {
+                    display: flex;
+                    place-items: center;
+                    column-gap: 1em;
+                    .box {
+                        border: none;
+                        svg {
+                            width: 1em;
+                        }
+                    }
+                    .facebook {
+                        color: #1877F2;
+                    }
+                    .instagram {
+                        color: #E4405F;
+                    }
+                    .snapchat {
+                        color: #020202;
+                    }
+                }
+            }
+        }
+    }
+    .navs {
+        padding: 1em 0;
+    }
+    .container {
+        .content {
+            .phone,
+            .nav-list {
+                display: none;
+            }
+            .d-flex {
+                display: flex;
+                place-items: center;
+                ul {
+                    .nav-item {
+                        .nav-link {
+                            color: #3498db;
+                        }
+                        .links:hover {
+                            background-color: #3498db;
+                            color: #fff;
+                        }
+                        .detect {
+                            background-color: #3498db;
+                            color: #fff;
+                        }
+                        .book {
+                            background-color: #9b59b6;
+                            color: #fff;
+                            margin-right: 1em;
+                        }
+                    }
+                }
+            }
+            .block {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 811px) {
+    .wrapper {
+        .container {
+            .content {
+                .nav-links {
+                    display: grid;
+                    justify-content: end;
+                }
+                .nav-list {
+                    display: block;
+                    background-color: #3498db;
+                    color: #fff;
+                    svg {
+                        color: #fff;
+                    }
+                }
+                .justify-content-end {
+                    display: none;
+                }
+                .phone {
+                    z-index: 1;
+                    border-top: 1px solid #3498db;
+                    border-bottom: 1px solid #3498db;
+                    background-color: #3498db;
+                    ul {
+                        position: sticky;
+                        z-index: 3;
+                        width: 100%;
+                        li {
+                            width: 100%;
+                            list-style: none;
+                            a {
+                                width: 100%;
+                                color: #fff;
+                                font-size: 100%;
+                            }
+                            a:hover {
+                                background-color: #fff;
+                                color: #3498db;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contact {
+            .container {
+                .normal-phones {
+                    display: none;
+                }
+                .phone-phones {
+                    display: block;
+                    .phones {
+                        width: 100%;
+                        display: flex;
+                        place-content: space-between;
+                        place-items: center;
+                        .numbers {
+                            display: flex;
+                            column-gap: .5em;
+                        }
+                        .btn {
+                            background-color: #9b59b6;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

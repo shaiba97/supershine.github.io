@@ -1,0 +1,46 @@
+<div class="book">
+    <div class="divider"></div>
+    <div class="info container">
+        <form action="" method="post" class="card" [formGroup]="items">
+            <div class="errors" id="errors" *ngIf="errors !== undefined">
+                <span class="error" *ngFor="let error of errors">
+              <small *ngIf="error.type === 'required'" class="text-danger" >{{ error.msg }}</small>
+              <small *ngIf="error.type === 'regex'" class="text-danger">{{ error.msg }}</small>
+            </span>
+            </div>
+            <div class="inputs" id="inputs">
+                <div class="two">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" (click)="delete($event)" formControlName="first_name" id="first_name" placeholder="first name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" (click)="delete($event)" formControlName="last_name" id="last_name" placeholder="last name">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" (click)="delete($event)" formControlName="contact" id="contact" placeholder="email or phone number">
+                    <div id="contactHelp" class="form-text">We'll never share your contact with anyone else.</div>
+                </div>
+                <div class="">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" (click)="delete($event)" formControlName="building" id="building" placeholder="Building">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" (click)="delete($event)" formControlName="floor" id="floor" placeholder="floor">
+                    </div>
+                </div>
+
+                <div class="two">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" (click)="delete($event)" formControlName="tower" id="tower" placeholder="tower (Optional)">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" (click)="delete($event)" formControlName="landmark" id="landmark" placeholder="landmark (Optional)">
+                    </div>
+                </div>
+            </div>
+            <input type="submit" (click)="postRequest()" class="btn" value="Book">
+        </form>
+    </div>
+    <div class="divider"></div>
+</div>

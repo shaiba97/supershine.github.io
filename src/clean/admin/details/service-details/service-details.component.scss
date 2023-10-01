@@ -1,0 +1,54 @@
+.wrapper {
+    height: 78vh;
+    .container {
+        height: 100%;
+        .content {
+            height: 100%;
+            .member {
+                height: 100%;
+                display: grid;
+                row-gap: 2em;
+                .title {
+                    height: 5em;
+                    display: grid;
+                    place-content: center;
+                    color: #bdc3c7;
+                }
+                .forms {
+                    // height: 10%;
+                    display: grid;
+                    place-content: center;
+                    row-gap: 5px;
+                    .errors {
+                        text-align: center;
+                        border: 1px solid #dc3545;
+                        border-radius: 5px;
+                    }
+                    form {
+                        display: grid;
+                        gap: .6em;
+                        input {
+                            width: 30em;
+                        }
+                        button {
+                            background-color: #1abc9c;
+                            color: #fff;
+                        }
+                        .back {
+                            .btn {
+                                border: 1px solid #000;
+                                color: #000;
+                            }
+                        }
+                    }
+                    .arabic {
+                         ::placeholder,
+                        input {
+                            text-align: end;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

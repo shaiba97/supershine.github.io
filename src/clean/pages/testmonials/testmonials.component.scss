@@ -1,0 +1,93 @@
+.wrapper {
+    .container {
+        .content {
+            .testimonial {
+                width: 100%;
+                height: fit-content;
+                display: grid;
+                .divider {
+                    width: 100%;
+                    height: 40vh;
+                    color: #cccccc;
+                    display: grid;
+                    place-content: center;
+                    place-items: center;
+                    h1 {
+                        text-transform: uppercase;
+                    }
+                }
+                .container {
+                    height: 100%;
+                    height: fit-content;
+                    display: grid;
+                    row-gap: 1em;
+                    .see-more {
+                        text-align: end;
+                    }
+                }
+                .images {
+                    width: 100%;
+                    height: fit-content;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    row-gap: 3em;
+                    .card {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 1em;
+                        margin: 1em;
+                        padding: 1em;
+                        img {
+                            height: 50vh;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 811px) {
+    .wrapper {
+        .container {
+            .content {
+                .testimonial {
+                    width: 100%;
+                    height: fit-content;
+                    display: grid;
+                    .divider {
+                        height: 18vh;
+                    }
+                    .container {
+                        height: 100%;
+                        height: fit-content;
+                        display: grid;
+                        row-gap: 1em;
+                        .see-more {
+                            text-align: end;
+                        }
+                    }
+                    .images {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        row-gap: 1em;
+                        .card {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: .5em;
+                            margin: .5em;
+                            padding: .5em;
+                            img {
+                                height: 30vh;
+                                object-fit: cover;
+                                object-position: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

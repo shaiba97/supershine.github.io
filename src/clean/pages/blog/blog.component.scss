@@ -1,0 +1,75 @@
+.container {
+    height: fit-content;
+    .content {
+        .blogs {
+            .divider {
+                width: 100%;
+                height: 40vh;
+                color: #888;
+                display: grid;
+                place-content: center;
+                place-items: center;
+                h1 {
+                    text-transform: uppercase;
+                }
+            }
+            .blog {
+                display: grid;
+                row-gap: 40vh;
+                .blog-image {
+                    width: 100%;
+                    height: 50vh;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                .blog-text {
+                    color: #8b8b8b;
+                    p {
+                        text-align: justify;
+                        writing-mode: horizontal-tb;
+                        font-size: 2.4ch;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 811px) {
+    .container {
+        height: fit-content;
+        .content {
+            .blogs {
+                .divider {
+                    height: 18vh;
+                }
+                .blog {
+                    display: grid;
+                    row-gap: 10vh;
+                    .blog-image {
+                        width: 100%;
+                        height: 25vh;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                    .blog-text {
+                        color: #8b8b8b;
+                        p {
+                            text-align: justify;
+                            writing-mode: horizontal-tb;
+                            font-size: 1.7ch;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

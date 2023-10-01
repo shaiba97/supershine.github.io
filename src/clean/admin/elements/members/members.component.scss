@@ -1,0 +1,30 @@
+.wrapper {
+    .container {
+        .content {
+            .title {
+                height: 5em;
+                display: grid;
+                place-content: center;
+                place-items: center;
+                color: #bdc3c7;
+            }
+            table {
+                tr {
+                    border-bottom: 1px solid #cacaca;
+                    .cta {
+                        display: flex;
+                        column-gap: .5em;
+                        a {
+                            background-color: #1abc9c;
+                            color: white;
+                        }
+                        button {
+                            background-color: red;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

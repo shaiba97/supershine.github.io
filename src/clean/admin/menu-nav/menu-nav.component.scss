@@ -1,0 +1,23 @@
+    .wrapper {
+        height: 61px;
+        display: grid;
+        place-items: center;
+        border-bottom: 1px solid #9b59b6;
+        background-color: #fff;
+        .container {
+            .content {
+                place-items: center;
+                display: flex;
+                justify-content: space-between;
+                place-items: center;
+                .language {
+                    svg {
+                        width: 1.4em;
+                    }
+                    .btn {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }

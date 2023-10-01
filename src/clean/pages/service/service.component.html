@@ -1,0 +1,22 @@
+<div class="services">
+    <div class="container">
+        <div class="content">
+            <div class="divider title">
+                <h1>services</h1>
+            </div>
+            <ul class="list-group">
+
+                <li class="list-group-item" *ngFor="let item of items">
+                    <div>
+                        <h3> {{item.service | titlecase}} </h3>
+                        <p>
+                            {{item.desc}}
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="divider"></div>
+        </div>
+    </div>
+</div>
